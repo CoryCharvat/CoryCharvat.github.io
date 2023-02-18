@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;,'Poppins', sans-serif;
+}
+html{
+    --global-color-1:  #3A10E5;;
+    --global-color-2: #fff;
+    scroll-behavior: smooth;
+
+    
+}
+
+main{
+    margin-left: 290px;                       /*positioning for the cointent of main*/
+    margin-right: 25px;
+    
+}
+
+.side-nav{
+    border-style: none solid none none;      /*boarder for just right of nav bar*/
+    width:250px;                             /*positioning for the cointent of nav bar*/
+    height: 100%;
+    background: #3A10E5;
+    position: fixed;                        /*positioning for the fixed nav bar*/
+
+}
+.container{
+   display: flex;
+   justify-content:flex-start;
+   justify-content: space-between;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   flex-wrap:wrap;
+
+   
+}
+
+.container div{
+    width: 50%;                                 /*make only 2 items per row*/
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  
+}
+.container h2{
+    padding-bottom: 5%;
+
+    
+}
+
+
+.logo{
+    display: block;
+    margin-bottom: 130px;
+    margin-top: 35px;
+    margin-left: 47px;
+}
+.logo-img{
+    width: 150px;
+}
+.nav-links{
+    list-style: none;
+    position: relative;                      /*makes selector in the right spot*/
+}
+.nav-links li{
+    padding: 10px 0;                        /*spacing for each nav link*/
+}
+.nav-links li a{
+    color: #fff ;
+    text-decoration: none;                   /* no underlined text */
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+.nav-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.active{
+    background:#fff;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 2.6%;                               /* rough positioning for centering active */
+    z-index: -1;                            /*removes fluttering when hover over active*/
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: top 0.3s;                   /*transition speed from each item*/
+}
+.nav-links li:hover a{
+    color: black;
+    transition: 0.1s;                       /*transition speed from each p tag to change color*/
+}
+.nav-links li:hover ~ .active{
+    display: block;
+}
+.nav-links li:nth-child(1):hover ~ .active{         /*100% of the page devided by the number or li is 6 for every after the first ++by that number*/
+    top: 2.6%;
+}
+.nav-links li:nth-child(2):hover ~ .active{
+    top: 19.2%;
+}
+.nav-links li:nth-child(3):hover ~ .active{
+    top: 35.8%;
+}
+.nav-links li:nth-child(4):hover ~ .active{
+    top: 52.4%;
+}
+.nav-links li:nth-child(5):hover ~ .active{
+    top: 69%;
+}
+.nav-links li:nth-child(6):hover ~ .active{
+    top: 85.6%;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .side-nav{
+        width: 110px;
+      
+    }
+    main{
+        margin-left: 25%;   /* eddit */
+    }
+    .logo{
+        display: none;
+    }
+    .nav-links li a p{
+        display: none;
+    }
+    .nav-links{
+        padding-left: 28%;
+    }
+    .container div{width: auto;}
+
+}
+
+
