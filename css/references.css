@@ -4,6 +4,7 @@
     font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
 }
 html{
+    /* global not used and scroll not used*/
     --global-color-1:  #3A10E5;;
     --global-color-2: #fff;
     scroll-behavior: smooth;
@@ -12,7 +13,143 @@ html{
 main{
     margin-left: 280px;                       /*positioning for the cointent of main*/
     margin-right: 19px;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr ;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "blank ref1 ref2 ref3 ref4"
+    "names name1 name2 name3 name4"
+    "job ref1job ref2job ref3job ref4job"
+    "employer ref1employer ref2employer ref3employer ref4employer"
+    "phone ref1phone ref2phone ref3phone ref4phone"
+    "link ref1link ref2link ref3link ref4link"
+    ;
+}
+
+    /*Kelly*/
+.blank{
+    grid-area: blank;
+}
+.ref1{
+    margin-top: 50px;
+   grid-area: ref1;
+   text-align: center;
+}
+.name1{
+    grid-area: name1;
+    text-align: center;
+}
+.ref1job{
+    grid-area: ref1job;
+    text-align: center;
+}
+.ref1employer{
+    grid-area: ref1employer;
+    text-align: center;
+}
+.ref1phone{
+    grid-area: ref1phone;
+    text-align: center;
+}
+.ref1link{
+    grid-area: ref1link;
+}
+.linkedin1 {
+    text-align: center;
+}
+.linkedin1 i{
+    font-size: 30px;
+}
+
+    /*Tan*/
+.ref2{
+    margin-top: 50px;
+    grid-area: ref2;
+    text-align: center;
+ }
+ .name2{
+    grid-area: name2;
+    text-align: center;
+}
+ .ref2job{
+    grid-area: ref2job;
+    text-align: center;
+}
+.ref2employer{
+    grid-area: ref2employer;
+    text-align: center;
+}
+.ref2phone{
+    grid-area: ref2phone;
+    text-align: center;
+}
+.ref2link{
+    grid-area: ref2link;
+}
+.linkedin2{
+    text-align: center;
+}
+.linkedin2 i{
+    font-size: 30px;
+}
+    /*Linsey*/
+.ref3{
+    margin-top: 50px;
+    grid-area: ref3;
+    text-align: center;
+ }
+ .name3{
+    grid-area: name3;
+    text-align: center;
+}
+ .ref3job{
+    grid-area: ref3job;
+    text-align: center;
+}
+.ref3employer{
+    grid-area: ref3employer;
+    text-align: center;
+}
+.ref3phone{
+    grid-area: ref3phone;
+    text-align: center;
+}
+.ref3link{
+    grid-area: ref3link;
+    text-align: center;
+}
+.website1{
+    text-align: center;
+}
+.website1 i{
+    font-size: 30px;
+}
+    /*Billy*/
+.ref4{
+    margin-top: 50px;
+    grid-area: ref4;
+    text-align: center;
+}
+.name4{
+    grid-area: name4;
+    text-align: center;
+}
+ .ref4job{
+    grid-area: ref4job;
+    text-align: center;
+}
+.ref4employer{
+    grid-area: ref4employer;
+    text-align: center;
+}
+.ref4phone{
+    grid-area: ref4phone;
+    text-align: center;
+}
+.ref4link{
+    grid-area: ref4link;
+    text-align: center;
 }
 
 .side-nav{
@@ -94,11 +231,29 @@ main{
 @media only screen and (max-width: 600px){
     .side-nav{
         width: 110px;
-      
     }
     main{
+        display: flex;
+        flex-direction: column;
         margin-left: 25%;   /* eddit */
+       
     }
+    .blank{
+        display: none;
+    }
+    .job{
+        display: none;
+    }
+    .employer{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+
     .logo{
         display: none;
     }

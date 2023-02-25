@@ -25,6 +25,9 @@ main{
     position: fixed;                        /*positioning for the fixed nav bar*/
 
 }
+
+
+
 .container{
    display: flex;
    justify-content:flex-start;
@@ -32,21 +35,18 @@ main{
    padding-top: 5%;
    padding-bottom: 5%;
    flex-wrap:wrap;
-
-   
 }
 
 .container div{
-    width: 50%;                                 /*make only 2 items per row*/
+    width: 50%;                                 
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
-  
 }
+*/
 .container h2{
+    padding-top: 5%;
     padding-bottom: 5%;
-
-    
 }
 
 
@@ -117,7 +117,9 @@ main{
 }
 
 
-
+@media only screen and (max-width: 1123px){
+    .container div{width: auto;}
+}
 @media only screen and (max-width: 600px){
     .side-nav{
         width: 110px;
