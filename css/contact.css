@@ -14,7 +14,84 @@ main{
     margin-right: 19px;
     
 }
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+    max-width: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #3A10E5;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 5px;
 
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: white;
+    color:#3A10E5;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+button[type="submit"]:hover{
+    color:#3A10E5;
+    background-color:rgb(179, 198, 212);
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.success{
+    color: white;
+    background-color: #3A10E5;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: red;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 .side-nav{
     border-style: none solid none none;      /*boarder for just right of nav bar*/
     width:250px;                             /*positioning for the cointent of nav bar*/
@@ -28,10 +105,11 @@ main{
     margin-bottom: 130px;
     margin-top: 35px;
     margin-left: 47px;
+    color: white;
+    font-size: 100px;
+   padding-left: 6%;
 }
-.logo-img{
-    width: 150px;
-}
+
 .nav-links{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/

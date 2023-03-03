@@ -49,10 +49,11 @@ h2{
     margin-bottom: 130px;
     margin-top: 35px;
     margin-left: 47px;
+    color: white;
+    font-size: 100px;
+   padding-left: 6%;
 }
-.logo-img{
-    width: 150px;
-}
+
 .nav-links{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/

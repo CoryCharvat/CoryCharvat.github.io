@@ -1,0 +1,34 @@
+Jessica Young
+
+I really like the layout of your website. I love the navigation bar on the side 
+of the screen, and I like how, when I scale it how the menu interacts with the 
+size differences. The only detail I notice is that it looks like your {} image 
+is clipart since I see a checked pattern in the back. I think it would look 
+better to have the idea on a white background or the blue color you have for 
+your nav menu. Other than that, great work! If you are worried about grammer issues 
+in the future, consider using Grammarly, it is a free software that catches grammer 
+errors. I use it to help me with my writing.
+
+
+Jacob Weisgerber
+
+I like the simple design because it makes it easy to read. I also like how smooth the
+ transitions are from section to section. Two things i would say that need to be fixed 
+ are the education,contact and the languages section because they all lead to the same 
+ place. Also the image in the top left does not seem to do anything. Other than that it
+ is fine.
+
+Oh one more I forgot to add. You may want to add a copyright somewhere in it.
+
+
+
+
+
+
+My Fixes:
+I Fiexed my img in my nav bar that had a white background and made it a clickable image that 
+sent the user ro the home page for now till I have a better idea for that. I do want it clickable.
+
+I did not add a copyright to the site because I think it is not neede and i did fix the 2 pages that
+lead to the same webpage and addeed some material to thoes pages. 
+and added photo credit to my references.

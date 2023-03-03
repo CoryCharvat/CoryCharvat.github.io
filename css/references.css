@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
+    font-family: Gloock "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
 }
 html{
     /* global not used and scroll not used*/
@@ -35,6 +35,9 @@ main{
     margin-top: 50px;
    grid-area: ref1;
    text-align: center;
+}
+cite{
+    font-size: 10px;
 }
 .name1{
     grid-area: name1;
@@ -165,10 +168,11 @@ main{
     margin-bottom: 130px;
     margin-top: 35px;
     margin-left: 47px;
+    color: white;
+    font-size: 100px;
+   padding-left: 6%;
 }
-.logo-img{
-    width: 150px;
-}
+
 .nav-links{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/
@@ -227,7 +231,6 @@ main{
 }
 
 
-
 @media only screen and (max-width: 600px){
     .side-nav{
         width: 110px;
@@ -239,6 +242,9 @@ main{
        
     }
     .blank{
+        display: none;
+    }
+    .name{
         display: none;
     }
     .job{

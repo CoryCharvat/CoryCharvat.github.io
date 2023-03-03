@@ -4,14 +4,16 @@
     font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
 }
 html{
-    --global-color-1:  #3A10E5;;
-    --global-color-2: #fff;
+    --global-color-1:  #3A10E5;/*unused*/
+    --global-color-2: #fff; /*unused*/
     scroll-behavior: smooth;
+
+    
 }
 
 main{
-    margin-left: 280px;                       /*positioning for the cointent of main*/
-    margin-right: 19px;
+    margin-left: 290px;                       /*positioning for the cointent of main*/
+    margin-right: 25px;
     
 }
 
@@ -23,15 +25,49 @@ main{
     position: fixed;                        /*positioning for the fixed nav bar*/
 
 }
+
+
+
+.container{
+   display: flex;
+   justify-content:flex-start;
+   justify-content: space-between;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   flex-wrap:wrap;
+}
+
+.container div{
+    width: 100%;                                 
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+*/
+.container h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.container h3{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#third{
+    padding-top: 5%;
+}
+#forth{
+    padding-top: 3%;
+}
 .logo{
     display: block;
     margin-bottom: 130px;
     margin-top: 35px;
     margin-left: 47px;
+    color: white;
+    font-size: 100px;
+   padding-left: 6%;
 }
-.logo-img{
-    width: 150px;
-}
+
 .nav-links{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/
@@ -89,9 +125,24 @@ main{
     top: 85.6%;
 }
 
-
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 713px){
+    .container div{width: auto;}
+    .container h2{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .container h3{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #third{
+        padding-top: 5%;
+    }
+    #forth{
+        padding-top: 3%;
+    }
+}
+@media only screen and (max-width: 680px){
     .side-nav{
         width: 110px;
       
@@ -108,7 +159,22 @@ main{
     .nav-links{
         padding-left: 28%;
     }
-
+    .container div{width: auto;}
+    .container h2{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .container h3{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #third{
+        padding-top: 5%;
+    }
+    #forth{
+        padding-top: 3%;
+    }
+    
 }
 
 
