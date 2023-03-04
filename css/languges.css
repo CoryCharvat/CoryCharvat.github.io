@@ -132,9 +132,14 @@ main{
 
 @media only screen and (max-width: 941px){
 
+    .rm1{
+        padding: 0;
+        display: none;
+    }
     .lang img{
         display: none;
     }
+    
 }
 
 @media only screen and (max-width: 600px){

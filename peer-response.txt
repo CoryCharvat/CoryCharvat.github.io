@@ -1,3 +1,8 @@
+
+
+
+Peer #1
+
 Jessica Young
 
 I really like the layout of your website. I love the navigation bar on the side 
@@ -10,6 +15,10 @@ in the future, consider using Grammarly, it is a free software that catches gram
 errors. I use it to help me with my writing.
 
 
+
+
+
+Peer #2
 Jacob Weisgerber
 
 I like the simple design because it makes it easy to read. I also like how smooth the
@@ -26,6 +35,7 @@ Oh one more I forgot to add. You may want to add a copyright somewhere in it.
 
 
 My Fixes:
+
 I Fiexed my img in my nav bar that had a white background and made it a clickable image that 
 sent the user ro the home page for now till I have a better idea for that. I do want it clickable.
 
