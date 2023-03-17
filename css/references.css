@@ -1,10 +1,10 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: Gloock "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
+    font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
 }
-html{
-    /* global not used and scroll not used*/
+
+html{                                          /* global not used and scroll not used*/
     --global-color-1:  #3A10E5;;
     --global-color-2: #fff;
     scroll-behavior: smooth;
@@ -17,8 +17,8 @@ main{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr ;
     grid-gap: 20px;
-    grid-template-areas: 
-    "blank ref1 ref2 ref3 ref4"
+    grid-template-areas:                    /* structure of grid */
+    "blank ref1 ref2 ref3 ref4"             /* blank is empty space */
     "names name1 name2 name3 name4"
     "job ref1job ref2job ref3job ref4job"
     "employer ref1employer ref2employer ref3employer ref4employer"
@@ -27,142 +27,175 @@ main{
     ;
 }
 
-    /*Kelly*/
+header {                            /* header */
+ text-align: center;
+ padding-top: 3%;
+ padding-left: 25%;
+}
+                                    /* All are in order form picture to link top to bottem  */
+                                      /*Kelly*/
 .blank{
     grid-area: blank;
 }
+
 .ref1{
     margin-top: 50px;
    grid-area: ref1;
    text-align: center;
 }
-cite{
+
+cite{                               /* unused but needed for citing pic in future if needed */
     font-size: 10px;
 }
+
 .name1{
     grid-area: name1;
     text-align: center;
 }
+
 .ref1job{
     grid-area: ref1job;
     text-align: center;
 }
+
 .ref1employer{
     grid-area: ref1employer;
     text-align: center;
 }
+
 .ref1phone{
     grid-area: ref1phone;
     text-align: center;
 }
+
 .ref1link{
     grid-area: ref1link;
 }
+
 .linkedin1 {
     text-align: center;
 }
+
 .linkedin1 i{
     font-size: 30px;
 }
-
-    /*Tan*/
+                                         /*Tan*/
 .ref2{
     margin-top: 50px;
     grid-area: ref2;
     text-align: center;
  }
- .name2{
+
+.name2{
     grid-area: name2;
     text-align: center;
 }
- .ref2job{
+
+.ref2job{
     grid-area: ref2job;
     text-align: center;
 }
+
 .ref2employer{
     grid-area: ref2employer;
     text-align: center;
 }
+
 .ref2phone{
     grid-area: ref2phone;
     text-align: center;
 }
+
 .ref2link{
     grid-area: ref2link;
 }
+
 .linkedin2{
     text-align: center;
 }
+
 .linkedin2 i{
     font-size: 30px;
 }
-    /*Linsey*/
+                                         /*Linsey*/
 .ref3{
     margin-top: 50px;
     grid-area: ref3;
     text-align: center;
  }
- .name3{
+
+.name3{
     grid-area: name3;
     text-align: center;
 }
- .ref3job{
+
+.ref3job{
     grid-area: ref3job;
     text-align: center;
 }
+
 .ref3employer{
     grid-area: ref3employer;
     text-align: center;
 }
+
 .ref3phone{
     grid-area: ref3phone;
     text-align: center;
 }
+
 .ref3link{
     grid-area: ref3link;
     text-align: center;
 }
+
 .website1{
     text-align: center;
 }
+
 .website1 i{
     font-size: 30px;
 }
-    /*Billy*/
+                                    /*Billy*/
 .ref4{
     margin-top: 50px;
     grid-area: ref4;
     text-align: center;
 }
+
 .name4{
     grid-area: name4;
     text-align: center;
 }
- .ref4job{
+
+.ref4job{
     grid-area: ref4job;
     text-align: center;
 }
+
 .ref4employer{
     grid-area: ref4employer;
     text-align: center;
 }
+
 .ref4phone{
     grid-area: ref4phone;
     text-align: center;
 }
+
 .ref4link{
     grid-area: ref4link;
     text-align: center;
 }
 
-.side-nav{
+.side-nav{                                    /* side nav starts */
     border-style: none solid none none;      /*boarder for just right of nav bar*/
     width:250px;                             /*positioning for the cointent of nav bar*/
     height: 100%;
     background: #3A10E5;
     position: fixed;                        /*positioning for the fixed nav bar*/
-
 }
+
 .logo{
     display: block;
     margin-bottom: 130px;
@@ -170,16 +203,18 @@ cite{
     margin-left: 47px;
     color: white;
     font-size: 100px;
-   padding-left: 6%;
+    padding-left: 6%;
 }
 
 .nav-links{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/
 }
+
 .nav-links li{
     padding: 10px 0;                        /*spacing for each nav link*/
 }
+
 .nav-links li a{
     color: #fff ;
     text-decoration: none;                   /* no underlined text */
@@ -187,10 +222,12 @@ cite{
     display: flex;
     align-items: center;
 }
+
 .nav-links li a i{
     font-size: 22px;
     margin-right: 20px;
 }
+
 .active{
     background:#fff;
     width: 100%;
@@ -204,42 +241,45 @@ cite{
     display: none;
     transition: top 0.3s;                   /*transition speed from each item*/
 }
+
 .nav-links li:hover a{
     color: black;
     transition: 0.1s;                       /*transition speed from each p tag to change color*/
 }
+
 .nav-links li:hover ~ .active{
     display: block;
 }
+
 .nav-links li:nth-child(1):hover ~ .active{         /*100% of the page devided by the number or li is 6 for every after the first ++by that number*/
     top: 2.6%;
 }
+
 .nav-links li:nth-child(2):hover ~ .active{
     top: 19.2%;
 }
+
 .nav-links li:nth-child(3):hover ~ .active{
     top: 35.8%;
 }
+
 .nav-links li:nth-child(4):hover ~ .active{
     top: 52.4%;
 }
+
 .nav-links li:nth-child(5):hover ~ .active{
     top: 69%;
 }
+
 .nav-links li:nth-child(6):hover ~ .active{
     top: 85.6%;
 }
 
-
-@media only screen and (max-width: 600px){
-    .side-nav{
-        width: 110px;
-    }
+@media only screen and (max-width: 1180px){
     main{
         display: flex;
         flex-direction: column;
-        margin-left: 25%;   /* eddit */
-       
+        margin-left: 25%;  
     }
     .blank{
         display: none;
@@ -259,7 +299,35 @@ cite{
     .link{
         display: none;
     }
+}
 
+@media only screen and (max-width: 600px){
+    .side-nav{
+        width: 110px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;   
+    }
+    .blank{
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+    .job{
+        display: none;
+    }
+    .employer{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
     .logo{
         display: none;
     }
@@ -269,7 +337,6 @@ cite{
     .nav-links{
         padding-left: 28%;
     }
-
 }
 
 

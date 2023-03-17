@@ -1,0 +1,12 @@
+TO DO:
+
+HTML and CSS Comments 
+
+
+
+DONE: 
+Language fixed on all nav bars
+refrence pic all the same size and font in nav bar fixed 
+Spelling errors
+Add Headers to all pages
+Language page sizing fixed with a boarter on the ourside

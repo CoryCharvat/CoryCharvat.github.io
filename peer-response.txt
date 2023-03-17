@@ -42,3 +42,75 @@ sent the user ro the home page for now till I have a better idea for that. I do 
 I did not add a copyright to the site because I think it is not neede and i did fix the 2 pages that
 lead to the same webpage and addeed some material to thoes pages. 
 and added photo credit to my references.
+
+
+Final Peer Review:
+
+
+
+
+
+Peer #1 Martin Bauzoon
+
+Hello Cory! I can see your pretty much finished with your website! Looking at your education tab you have
+ many lists of oyur skills! If possible you can add 1 picture of your self in one of those categories. 
+ For instance you have been part of the deli crew. If there is one add a picture of you working serving food! 
+ since you have completed a variety of skills in the "computer/technical" filed maybe add 1 fact or picture you 
+ are proud from your spare time ( building a computer, gaming setup, games etc.) Lastly adding a border, of your 
+ information would be something fun! Like your website cory!!
+
+
+
+
+
+ Peer #2 Radnall Dizon
+
+ I dig your navigational bar! The white thing that follows the cursor around is pretty cool. 
+ The overall layout is simple and put together well.
+
+The thing I'd critique, however, is when you crunch down the window, part of your nav bar is inaccessible 
+(see attachment). Which is unfortunate, cuz I love your nav bar!
+
+Also, I'm only assuming you might use this as a professional resume of sorts, so I'm going to play
+ English teacher a little bit and pick on the grammar and spelling. It's better that we address it now than when
+  this website is live and sent to potential employers. I just want to give you a better chance at nabbing that job!
+
+Without further ado:
+
+Home page - "Abilitys" needs to be changed to "abilities".
+Work page - "Extreamly" changed to "Extremely".
+Education page
+"Compleated" changed to "Completed".
+"Programing" changed to "Programming".
+"Into" changed to "Intro".
+(Further down) "Compleated" changed to "Completed".
+Languge page - "Languge" changed to "Language".
+Note: I noticed your language HTML name is also spelled incorrectly, so be wary if you're going to change the spelling of the file name because it might break the page.
+References page - I don't know if it's actually what it's called, but "Apetrure Strudios" to "Aperture Studios".
+Anyway, I hope it didn't come off as harsh, but hope the spelling checks help. Good luck!
+
+
+
+
+
+Peer #3 Natasha Willson
+
+Hey Cory, 
+
+Great website! Your passion shines through and it was a brilliant idea to use it to build your resume.
+ I liked the use of Formspree to make a contact box and the "go back" button worked. I sent you a message on it, I hope it worked. 
+ The navigation bar is just one of my favorite features on your website. I like that it's on the side in addition
+  to it being aesthetically pleasing. I like when the page is made smaller it becomes just the icons. I also like your use of a table for your languages page. 
+
+I went through the rubric and found you check off all the boxes. It was hard to find any critiques. So, here's what I've got for ya. . .
+
+Usability (p. 506) Let the users know where they are. Starting out on your home page and common sense
+ I think most users could figure out which page they are on. But for extra points sake, maybe putting headers on each page
+  that states what it is or even highlighting the according nav menu section.
+HTML Comments.  I did see a few comments here and there. I noticed more in the CSS than the HTML.
+ To be honest, your HTML is clean and easy to read. I'm not sure you  really need more. If you do add more,
+  I would comment out the sections. For example on the education or reference page you could comment out where code begins for each section. 
+Responsive Web Design. Overall, everything worked well and was laid out properly at all sizes of screen I used.
+ The only thing that stuck out to me was on the references page. When I made my screen size smaller,
+  the email addresses for Lindsey and William sit to the right of their photos. Whereas Kelly and Tanner's emails fall below their images. I like the latter better. 
+Lastly, the email addresses on the references page are a little to small to read 

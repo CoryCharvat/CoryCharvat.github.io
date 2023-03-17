@@ -3,19 +3,24 @@
     box-sizing: border-box;
     font-family: "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif,'Poppins', sans-serif;
 }
-html{
+
+html{                                         /*Global color not used*/
     --global-color-1:  #3A10E5;;
     --global-color-2: #fff;
     scroll-behavior: smooth;
-    
 }
 
 main{
     margin-left: 280px;                       /*positioning for the cointent of main*/
     margin-right: 19px;
-    
-    
 }
+
+h1{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 main img{
     display: block;
     margin-left: auto;
@@ -23,28 +28,23 @@ main img{
     max-width: 60%;
     max-height: 60%;
 }
-h1{
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
 
-
-}
 h2{
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
 
 }
+
 .side-nav{
     border-style: none solid none none;      /*boarder for just right of nav bar*/
     width:250px;                             /*positioning for the cointent of nav bar*/
     height: 100%;
     background: #3A10E5;
     position: fixed;                        /*positioning for the fixed nav bar*/
-
 }
-.logo{
+
+.logo{                                  /* side nav starts */
     display: block;
     margin-bottom: 130px;
     margin-top: 35px;
@@ -58,9 +58,11 @@ h2{
     list-style: none;
     position: relative;                      /*makes selector in the right spot*/
 }
+
 .nav-links li{
     padding: 10px 0;                        /*spacing for each nav link*/
 }
+
 .nav-links li a{
     color: #fff ;
     text-decoration: none;                   /* no underlined text */
@@ -68,10 +70,12 @@ h2{
     display: flex;
     align-items: center;
 }
+
 .nav-links li a i{
     font-size: 22px;
     margin-right: 20px;
 }
+
 .active{
     background:#fff;
     width: 100%;
@@ -85,49 +89,54 @@ h2{
     display: none;
     transition: top 0.3s;                   /*transition speed from each item*/
 }
+
 .nav-links li:hover a{
     color: black;
     transition: 0.1s;                       /*transition speed from each p tag to change color*/
 }
+
 .nav-links li:hover ~ .active{
     display: block;
 }
+
 .nav-links li:nth-child(1):hover ~ .active{         /*100% of the page devided by the number or li is 6 for every after the first ++by that number*/
     top: 2.6%;
 }
+
 .nav-links li:nth-child(2):hover ~ .active{
     top: 19.2%;
 }
+
 .nav-links li:nth-child(3):hover ~ .active{
     top: 35.8%;
 }
+
 .nav-links li:nth-child(4):hover ~ .active{
     top: 52.4%;
 }
+
 .nav-links li:nth-child(5):hover ~ .active{
     top: 69%;
 }
+
 .nav-links li:nth-child(6):hover ~ .active{
     top: 85.6%;
 }
 
-
-
 @media only screen and (max-width: 638px){
     .side-nav{
         width: 110px;
-      
     }
     main{
-        margin-left: 25%;   /* eddit */
+        margin-left: 25%;  
     }
     .logo{
+        display: none;                      /* removed img from top nav bar */
+    }
+    .nav-links li a p{                      /* remove other nav img to left of text */
         display: none;
     }
-    .nav-links li a p{
-        display: none;
-    }
-    .nav-links{
+    .nav-links{                             /* Spacing for links to be centered */
         padding-left: 28%;
     }
     main img{
